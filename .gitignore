@@ -1,0 +1,83 @@
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+.kotlin
+
+### IntelliJ IDEA ###
+.idea/modules.xml
+.idea/jarRepositories.xml
+.idea/compiler.xml
+.idea/libraries/
+*.iws
+*.iml
+*.ipr
+
+### Eclipse ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### VS Code ###
+.vscode/
+
+### Mac OS ###
+.DS_Store
+
+# Скомпилированные классы
+*.class
+*.jar
+*.war
+*.ear
+
+# Логи и временные файлы
+logs/
+*.log
+*.tmp
+*.temp
+
+# Базы данных и чувствительные данные
+*.db
+*.sqlite
+*.h2.db
+.env
+*.properties  # Исключение: нужно оставить hibernate.cfg.xml!
+
+# Исключение для hibernate.cfg.xml (ОЧЕНЬ ВАЖНО!)
+!src/main/resources/hibernate.cfg.xml
+
+# Maven (у вас уже есть target/)
+.mvn/
+mvnw
+mvnw.cmd
+
+# ========== ЧУВСТВИТЕЛЬНЫЕ ДАННЫЕ ==========
+# НЕ загружаем пароли из конфигурации БД!
+# Временно закомментируйте пароль в hibernate.cfg.xml:
+# <property name="hibernate.connection.password">***СКРЫТО***</property>
+
+# ========== СИСТЕМНЫЕ ФАЙЛЫ ==========
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~
+
+# Jetty
+jetty-*.jar.idea/
